@@ -1,0 +1,24 @@
+{
+    "author": "urandom",
+    "dependencies": {},
+    "keywords": [],
+    "name": "uradom",
+    "pebble": {
+        "displayName": "uradom",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "rocky",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "644a4e5c-f076-4185-92e6-f3c2d7db5035",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "0.1.0"
+}
