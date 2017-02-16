@@ -1,4 +1,5 @@
 var rocky = require('rocky');
+//rocky.export_global_c_symbols();
 
 rocky.on('draw', function(event) {
   // Get the CanvasRenderingContext2D object
@@ -21,7 +22,12 @@ rocky.on('draw', function(event) {
   ctx.textAlign = 'center';
 
   // Display the time, in the middle of the screen
+  //ctx.fillText('x1101', w/2, h/3);
+  //ctx.fillText(d.toLocaleTimeString('en-US', {minute: '2-digit', hour12: false}), w / 2, h / 2, w);
+  var DateString = d.toLocalTimeString('en-US', { minute: 'numeric', hour12: false});
+  console.log("Time is: " + DateString);
   ctx.fillText(d.toLocaleTimeString(), w / 2, h / 2, w);
+  
 });
 
 rocky.on('minutechange', function(event) {
